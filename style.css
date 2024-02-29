@@ -165,6 +165,13 @@ nav ul li a:hover::after{
   margin: 20px 0 20px;
 }
 
+.tab-contents{
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 300px;
+}
+
 .tab-links{
   margin-right: 50px;
   font-weight: 18px;
