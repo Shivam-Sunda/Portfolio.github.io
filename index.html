@@ -21,11 +21,17 @@
                 <ul>
                     <div id="bar">
                          <li ><a href="#header"><strong>Welcome</strong></a></li>
-                        <li  ><a href="#about"><strong>About Me</strong></a></li>
+                         <li  ><a href="#about"><strong>About Me</strong></a></li>
                         <li  ><a href="#portfolio"><strong>Projects</strong></a></li>
                         <li  ><a href="#contact"><strong>Contact</strong></a></li>
                     </div>
-                    <li id = "linesbar"><i class="fa-solid fa-grip-lines" style="color: #ffffff; " onclick="show()" ></i></li>
+                    <div id = "linesbar" onclick="show()">
+                        <li>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </li>
+                    </div>
                 </ul>
             </nav>
             <div class = "header-text">
@@ -100,6 +106,107 @@
                     <p><i class="fa-solid fa-database" style="color: #ff6666;"></i> SQL Database</p>
                 </div>
             </div>
+        </div>
+
+        <h1 class = "reshead">Resume</h1>
+        <div class = "resume">
+            <div class = "resume-col-1">
+                <h1 id = "me1">About</h1>
+                <h2 id = "me2">Front-end Developer</h2>
+                <p>I am an aspiring website developer currently studying in VIT Vellore. My roots are from Jaipur, Rajasthan. I am hardworking individual with a fire within to make a impact on the world.</p>
+                <div>
+                    <h1>Contact</h1>
+                    <ul>
+                        <li>+91 7727818181</li>
+                        <li>shivamsunda10@gmail.com</li>
+                        <li>N-Block, VIT University, Vellore</li>
+                    </ul>
+                </div>
+                <div class = "edu">
+                    <h1>Education</h1>
+                    <h2>Secondary</h2>
+                    <ul>
+                        <li>2013-2020</li>
+                        <li>St. Xavier's School, Nevta</li>
+                        <li>CBSE Board</li>
+                        <li>90.8%</li>
+                    </ul>
+
+                    <h2>Higher Secondar</h2>
+                    <ul>
+                        <li>2020-2022</li>
+                        <li>St. Xavier's School, Nevta</li>
+                        <li>CBSE Board, PCM</li>
+                        <li>91%</li>
+                    </ul>
+
+                    <h2>Engineering</h2>
+                    <ul>
+                        <li>2022-2026</li>
+                        <li>Vellore Institute of Technology, Vellore</li>
+                        <li>Computer Science Engineering</li>
+                        <li>CGPA: 8.69</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Languages</h1>
+                    <ul>
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>Spanish</li>
+                    </ul>
+                </div>
+
+                
+            </div>
+            
+            <div class = "resume-col-2">
+                <div>
+                    <h1 id = "me3">Technical Skills</h1>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>ReactJS</li>
+                        <li>MySQl</li>
+                        <li>Python</li>
+                        <li>CPP</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Soft Skills</h1>
+                    <ul>
+                        <li>Leadership Skills</li>
+                        <li>Teamwork</li>
+                        <li>Verbal and Written Communication</li>
+                        <li>Public Speaking</li>
+                        <li>Marketing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Volunteer Work</h1>
+                    <h2>I Can Foundation</h2>
+                    <p>I was in charge of education unprivileged children. We conduction regular tution sessions for the kids. We also conducted various informative sessions for the parents. We successfuly improved their test scores.</p>
+
+                    <h2>Kadam Foundation</h2>
+                    <p>I was on of the founding members in this foundation. We performed various plantation drives. We conducted session education people about the need of an healthy and greener environement.</p>
+                </div>
+                <div>
+                    <h1>Projects</h1>
+                    
+                    <h2>Personal Portfolio Website</h2>
+                    <p>In this project I created a personal portfolio website using HTML, CSS and Javascript</p>
+                    <ul>
+                        <li>UI and UX: Built a user appealing website emphasizing on user satisfaction.</li>
+                        <li>Responsive: Implemented features for a responsive website so that the user can interact with it.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class = "resbtndiv">
+            <a href = "resume.pdf" download class = "resbtn"> Download Resume</a>
         </div>
     </div>
 
@@ -235,6 +342,11 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+
+    function show() {
+        document.getElementById('bar').classList.toggle('active');
+    }
+
 </script>
 </body>
 </html>
