@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="8-utf">
 	<title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7c1712bd90.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class = "vv">
@@ -51,10 +53,11 @@
                     </div>
                     <div class = "about-col-2">
                         <h1 class = "subtitle">About Me</h1>
-                        <p>A front-end developer is like a digital architect, crafting the<br> 
-                            with precision and creativity. Armed with a blend of coding <br> 
-                            technical requirements into seamless, intuitive user experiences.<br> 
-                            and JavaScript, allowing them to breathe life into static designs
+                        <p>Hi, my name is Shivam Sunda, I am currently a 2nd year studnet<br> 
+                            at VIT Vellore. I am an aspiring front-end developer having knowledge<br> 
+                            about HTML, CSS, JS and React. I am creatively inclined, therefore<br> 
+                            have huge idear about websites and webpages. If you want to create<br>
+                            something out of the world, you can contact me.
                         </p>
                         
                         <div class = "tab-titles">
@@ -65,22 +68,22 @@
                         <div class = "tab-contents active-tab" id = "skills">
                             <ul>
                                 <li><span>UI/UX</span><br>Designing Web Interfaces</li>
-                                <li><span>Web development</span><br>DWeb App development</li>
-                                <li><span>App development</span><br>Building IOS apps</li>
+                                <li><span>Web development</span><br>Implementing Real World Websites</li>
+                                <li><span>DSA</span><br>Knowledge about the important algorithms</li>
                             </ul>
                         </div>
                         <div class = "tab-contents" id = "experience">
                             <ul>
-                                <li><span>2021-Current</span><br>UI/UX Design Training at VIT Istitute</li>
-                                <li><span>2019-2021</span><br>Team lead at StarApp LLC.</li>
-                                <li><span>2017-2019</span><br>UI/UX Executive at Coin Digital</li>
+                                <li><span>2023-Current</span><br>UI/UX Design Training at VIT Istitute</li>
+                                <li><span>2022-2023</span><br>Team lead at StarApp LLC.</li>
+                                <li><span>2020-2023</span><br>Created a program for Car dealership</li>
                             </ul>
                         </div>
                         <div class = "tab-contents" id = "education">
                             <ul>
-                                <li><span>2016</span><br>UI/UX Design training</li>
-                                <li><span>2016</span><br>MBA from MIT Banglore</li>
-                                <li><span>2014</span><br>BBA from ISM Banglore</li>
+                                <li><span>2026</span><br>B.Tech from VIT, Vellore</li>
+                                <li><span>2022</span><br>XII from St. Xavier's School, Nevta</li>
+                                <li><span>2020</span><br>X from St. Xavier's School, Nevta</li>
                             </ul>
                         </div>
                     </div>
@@ -288,12 +291,12 @@
                     </div>
                 </div>
                 <div class = "contact-right">
-                    <from>  
+                    <form>  
                         <input class = "hello" type = "text" name = "Name" placeholder = "Your Name" required>
                         <input class = "hello" type = "email" name = "email" placeholder = "Your Email" required>
-                        <textarea class = "hello" name = "Message" rows = "6" placeholder = "Your Message"></textarea>
-                        <button type = "submit" class = "btn">Submit</button>
-                    </from>
+                        <textarea class = "hello" name = "Message" rows = "6" placeholder = "Your Message" required></textarea>
+                        <button id = "contact-button" type = "submit" class = "btn">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -324,29 +327,5 @@
         </div>
 </div>
 
-
-
-
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    function show() {
-        document.getElementById('bar').classList.toggle('active');
-    }
-
-</script>
 </body>
 </html>
