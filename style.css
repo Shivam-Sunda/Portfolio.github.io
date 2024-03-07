@@ -1,3 +1,21 @@
+:root{
+  --primary-color: black;
+  --secondary-color: whitesmoke;
+  --trans: rgba(0, 0, 0, 0.69);
+  --accent: aqua;
+}
+
+.light-theme{
+  --primary-color: whitesmoke;
+  --secondary-color: black;
+  --trans: rgba(219, 219, 219, 0.69); 
+  --accent: rgb(47, 73, 176);
+}
+
+#icon{
+  color: var(--secondary-color);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,7 +25,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: var(--primary-color);
 }
 
 .vv {
@@ -22,8 +40,8 @@ body {
 
 .trans-box {
   margin: 5px 10%;
-  background-color: rgba(0, 0, 0, 0.69);
-  border-radius: 5%;
+  background-color: var(--trans);
+  border-radius: 100px;
 }
 
 .container {
@@ -43,7 +61,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: azure;
+  color: var(--secondary-color);
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -63,7 +81,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: aqua;
+  background: var(--accent);
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -100,7 +118,7 @@ nav ul li a:hover::after {
   font-family: "Namdhinggo", serif;
   font-weight: 600;
   font-style: normal;
-  color: whitesmoke;
+  color: var(--secondary-color);
 }
 
 .header-text h1 {
@@ -110,7 +128,7 @@ nav ul li a:hover::after {
   font-weight: 400;
   font-style: normal;
   padding-top: -60px;
-  color: whitesmoke;
+  color: var(--secondary-color);
 }
 
 #bar {
@@ -123,19 +141,20 @@ nav ul li a:hover::after {
 #linesbar {
   display: inline-block;
   position: absolute;
+  top: 7px;
 }
 
 #linesbar span {
   width: 30px;
   height: 4px;
-  background: aqua;
+  background: var(--accent);
   display: block;
   margin-top: 4px;
 }
 
 #linesbar:hover {
   cursor: pointer;
-  color: aqua;
+  color: var(--accent);
 }
 
 #bar.active {
@@ -147,17 +166,22 @@ nav ul li a:hover::after {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
+nav ul li i::before{
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+}
 /* ----------------About-------------- */
 
 #about {
   padding-top: 30px;
   padding-bottom: 80px;
-  color: #ababab;
+  color: var(--secondary-color);
   margin-top: 100px;
 }
 
 #about h1 {
-  color: aqua;
+  color: var(--accent);
   font-size: 80px;
   margin-bottom: 15px;
 }
@@ -222,7 +246,7 @@ nav ul li a:hover::after {
   animation-timeline: view();
   animation-range-start: 0px;
   animation-range-end: 300px;
-  color: whitesmoke;
+  color: var(--secondary-color);
 }
 
 @keyframes slideInbottom {
@@ -246,7 +270,7 @@ nav ul li a:hover::after {
   animation-timeline: view();
   animation-range-start: 0px;
   animation-range-end: 300px;
-  color: whitesmoke;
+  color: var(--secondary-color);
 }
 
 .tab-links {
@@ -261,7 +285,7 @@ nav ul li a:hover::after {
   content: '';
   width: 0;
   height: 3px;
-  background: aqua;
+  background: var(--accent);
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -282,7 +306,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-  color: aqua;
+  color: var(--accent);
   font-size: 14px;
 }
 
@@ -314,11 +338,11 @@ nav ul li a:hover::after {
 }
 
 .Languages p {
-  color: white;
+  color: var(--secondary-color);
 }
 
 .Languages h1 {
-  color: aqua;
+  color: var(--accent);
   font-size: 50px;
 }
 
@@ -343,7 +367,6 @@ nav ul li a:hover::after {
   padding-left: 20px;
   box-sizing: border-box;
   text-align: center;
-  /* border-right: 1px solid #ddd; */
 }
 
 .row1 p:last-child,
@@ -368,7 +391,7 @@ i {
 
 .reshead{
   text-align: center;
-  color: aqua;
+  color: var(--accent);
   font-size: 50px;
 }
 
@@ -376,14 +399,14 @@ i {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .resume-col-1 {
   flex-basis: 43%;
   border-right-style: solid;
   border-width: 3px;
-  border-color: aqua;
+  border-color: var(--accent);
   padding: 30px;
   margin-left: 30px;
   margin-bottom: 50px;
@@ -397,7 +420,7 @@ i {
 }
 
 .resume h1{
-  color: aqua;
+  color: var(--accent);
   font-size: 40px;
   margin-bottom: 5px;
 }
@@ -455,15 +478,15 @@ i {
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  color: gray;
+  color: var(--primary-color);
   transition: background 0.5s;
   font-size: 15px;
   border-radius: 12px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
 }
 
 .resbtn:hover {
-  background: aqua;
+  background: var(--accent);
 }
 
 
@@ -471,7 +494,7 @@ i {
 /* ------------------------Projects------------------- */
 
 #portfolio h1 {
-  color: aqua;
+  color: var(--accent);
   font-size: 60px;
 }
 
@@ -516,7 +539,7 @@ i {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), aqua);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), var(--accent));
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -535,16 +558,16 @@ i {
 .layer h3 {
   font-weight: 500;
   margin-bottom: 20px;
-  color: aqua;
+  color: var(--accent);
 }
 
 .layer a {
   margin-top: 10px;
-  color: aqua;
+  color: var(--accent);
   text-decoration: none;
   font-size: 18px;
   line-height: 72px;
-  background: #fff;
+  background: var(--secondary-color);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -555,7 +578,7 @@ i {
 .layer p {
   padding-left: 10%;
   padding-right: 10%;
-  color: white;
+  color: var(--secondary-color);
   margin-bottom: 3px;
 }
 
@@ -585,8 +608,8 @@ i {
 
 .trans-box2 {
   margin: 143px;
-  background-color: rgba(0, 0, 0, 0.69);
-  border-radius: 5%;
+  background-color: var(--trans);
+  border-radius: 100px;
 }
 
 .container1 {
@@ -595,12 +618,12 @@ i {
 
 .container1 h1 {
   font-size: 55px;
-  color: aqua;
+  color: var(--accent);
   margin-bottom: 80px;
 }
 
 .container1 p {
-  color: whitesmoke;
+  color: var(--secondary-color);
   font-size: 15px;
 }
 
@@ -619,7 +642,7 @@ i {
 }
 
 .contact-left p i {
-  color: aqua;
+  color: var(--accent);
   margin-right: 15px;
   font-size: 25px;
 }
@@ -632,13 +655,13 @@ i {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: whitesmoke;
+  color: var(--secondary-color);
   display: inline-block;
   transition: transform 0.5s;
 }
 
 .social-icons a:hover {
-  color: aqua;
+  color: var(--accent);
   transform: translateY(-5px);
 }
 
@@ -651,14 +674,15 @@ i {
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  color: gray;
+  color: var(--primary-color);
   transition: background 0.5s;
   font-size: 15px;
   border-radius: 12px;
+  background-color: var(--secondary-color);
 }
 
 .btn:hover {
-  background: aqua;
+  background: var(--accent);
 }
 
 .contact-right form {
@@ -669,10 +693,10 @@ i {
   width: 100%;
   border: 0;
   outline: none;
-  background: rgb(14, 14, 14);
+  background: var(--primary-color);
   padding: 15px;
   margin: 15px 0;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 18px;
   border-radius: 6px;
 }
@@ -691,11 +715,11 @@ form btn {
 
 .trans-box1 {
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.69);
+  background-color: var(--trans);
 }
 
 .src h1 {
-  color: aqua;
+  color: var(--accent);
   text-align: center;
   font-size: 50px;
   padding-top: 20px;
@@ -745,7 +769,7 @@ form btn {
 }
 
 button:hover {
-  background: aqua;
+  background: var(--accent);
 }
 
 .vidtext h1 {
@@ -759,5 +783,5 @@ button:hover {
 }
 
 .vidtext p span {
-  color: aqua;
+  color: var(--accent);
 }
