@@ -39,3 +39,17 @@ document.addEventListener('DOMContentLoaded', function() {
         alert("Form submit successful");
     });
 });
+
+var icon = document.getElementById("icon");
+var hallo = document.getElementById("video");
+
+function changeIcon(){
+    console.log(hallo.src+"oo")
+    if(hallo.src == "file:///C:/Users/shiva/Desktop/Study/Web%20Dev/Assessment%202/bg.mp4" || hallo.src == ""){
+        hallo.src = "bg_white.mp4";
+    }
+    else{
+        hallo.src = "bg.mp4";
+    } 
+    document.body.classList.toggle("light-theme");
+}
