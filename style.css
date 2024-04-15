@@ -354,6 +354,10 @@ nav ul li i::before{
   width: 100%;
   padding: 16px 0;
   margin-left: 100px;
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 300px;
 }
 
 .row1 p,
@@ -412,11 +416,41 @@ i {
   margin-bottom: 50px;
 }
 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.resume-col-1 h1,
+.resume-col-1 h2,
+.resume-col-1 p,
+.resume-col-1 ul{
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
+}
+
 .resume-col-2 {
   flex-basis: 45%;
   padding-top: 80px;
   padding: 30px;
   margin-bottom: 50px;
+}
+
+.resume-col-2 h1,
+.resume-col-2 h2,
+.resume-col-2 p,
+.resume-col-2 ul{
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
 }
 
 .resume h1{
